@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "6527ebd2-9da3-4958-ba40-616dc3b011ee",
+		"name": "jwt node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/welcome",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjE1YTRjMDdiYTFmODIzYWY0NmU0ZjlhIiwiZW1haWwiOiJmZGYiLCJpYXQiOjE2MzMzMDc2NTUsImV4cCI6MTYzMzMxNDg1NX0.F20s1BdSLP_-Q8hAQKxqEw8Gso32vaFN6nqJEhZdm18",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/welcome",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"welcome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ff\",\r\n    \"password\":\"ff\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"mos\",\r\n    \"last_name\":\"nn\",\r\n    \"email\":\"fdf\",\r\n    \"password\":\"ff\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
